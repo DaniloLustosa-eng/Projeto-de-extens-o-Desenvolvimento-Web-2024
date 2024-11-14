@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/IMAGES/LOGOTIPOCOM.png">
+    <title>BROTA NO CORTE</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/mainPage.css"> 
+</head>
+
+<body>
+    <!-- Header com logo e navegação para diferentes áreas -->
+    <header id="header_main">
+        <aside>
+            <section>
+                <a href="/HTML/mainPage.html"><img src="/IMAGES/LOGOTIPOCOM.png" alt="Logo" class="logo"></a>
+            </section>
+        </aside>
+
+        <ul>
+            <li><a href="#sobre">SOBRE NÓS</a></li>
+            <li><a href="#location">LOCALIZAÇÃO</a></li>
+            <li><a target="_blank" href="/HTML/shopping.html">PRODUTOS</a></li>
+            <li><a href="/HTML/login.html">ENTRAR</a></li>
+        </ul>
+
+        <!-- Botão redirecionando para o carrinho -->
+        <a href="/HTML/cart.html" class="cart" title="Carrinho de Compras"> <span class="cart-icon">🛒</span> </a>
+    </header>
+
+    <main>
+        <!-- Imagem de início da página -->
+        <section id="main_Image"></section>
+
+        <section id="sobre">
+            <div class="conteudo">
+                <div class="texto">
+                    <h2>Bem-vindo</h2>
+                    <p>Bem-vindo à nossa barbearia, onde tradição e estilo se encontram!<br>
+                    Somos uma equipe apaixonada de profissionais dedicados a oferecer uma experiência única a cada cliente.<br>
+                    Aqui, valorizamos a arte da barbearia, transformando cortes e barbas em verdadeiras obras-primas.<br>
+                    Nosso ambiente acolhedor e descontraído é o lugar perfeito para relaxar, bater um papo e sair renovado.</p>
+                    <p>Venha nos visitar e descubra como podemos realçar seu estilo com cuidado e atenção aos detalhes.<br>
+                    Afinal, mais do que um corte, proporcionamos um momento especial para você.</p>
+                    <h3>CONTATO</h3>
+                    <ul id="contact">
+                        <li id="wpp"><a target="_blank" href="https://wa.me/5521998563711"><img src="/IMAGES/Icon_Wpp.png" alt="WhatsApp"></a></li>
+                        <li id="insta"><a target="_blank" href="https://www.instagram.com/brota_no_corte/"><img src="/IMAGES/Icon_Insta.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção "Localização" com mapa integrado -->
+        <section id="location">
+            <h2 id="location_Title">Localização</h2>
+            <div id="mapContainer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.596940464421!2d-43.49583192400939!3d-22.85439697929206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995ff9d53d6b97%3A0xccf85d9603a20c75!2sAv.%20Alfredo%20Albuquerque%2C%2060%20-%20Vila%20Kennedy%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021852-370!5e0!3m2!1spt-BR!2sbr!4v1730433106424!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
+        </section>
+
+    </main>
+
+    <!-- Footer com direitos autorais -->
+    <footer>
+        <p>© 2024 BROTA NO CORTE. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/JAVASCRIPT/mainPage.js"></script>
+</body>
+</html>

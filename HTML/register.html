@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/IMAGES/LOGOTIPOCOM.png">
+    <title>BROTA NO CORTE</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/register.css"> 
+</head>
+
+<body>
+
+    <!-- Header com logo e  navegação para diferentes áreas -->
+    <header id="header_register">
+        <aside>
+            <section>
+                <a href="/HTML/mainPage.html"><img src="/IMAGES/LOGOTIPOCOM.png" alt="Logo" class="logo"></a>
+                
+                <h1>
+                    <a href="/HTML/mainPage.html"></a>
+                </h1>
+            </section>
+        </aside>
+
+        <ul>
+            <li><a href="/HTML/mainPage.html#sobre">SOBRE NÓS</a></li>
+            <li><a href="/HTML/mainPage.html#location">LOCALIZAÇÃO</a></li>
+            <li><a target="_blank" href="/HTML/shopping.html">PRODUTOS</a></li>
+            <li><a href="/HTML/login.html">ENTRAR</a></li>
+        </ul>
+    </header>
+
+       <!-- Formulário de registro -->
+        <section id="register">
+            <div id="registration">
+                <h1>CADASTRO</h1>
+                <form action="/HTML/login.html" method="GET" id="registrationForm">
+                
+                    <!-- Campo para nome do usuário -->
+                    <div>
+                        <input required type="text" placeholder="Nome" id="name_register">
+                        <span id="nameError"></span> 
+                    </div>
+                
+                    <!-- Campo para sobrenome -->
+                    <div>
+                        <input required type="text" placeholder="Sobrenome" id="lastName_register">
+                        <span id="lastNameError"></span> 
+                    </div>
+
+                    <!-- Campo para e-mail -->
+                    <div>
+                        <input required type="email" placeholder="E-mail" id="email_register">
+                        <span id="emailError"></span> 
+                    </div>
+                
+                    <!-- Campo para senha -->
+                    <div>
+                        <input required type="password" placeholder="Senha" id="password_register">
+                        <img src="/IMAGES/Icon_5.png" id="view_password" style="cursor: pointer;" alt="Mostrar/Ocultar Senha">
+                        <span id="passwordStrength"></span> <!-- Exibe a força da senha -->
+                    </div>
+
+                    <!-- Campo para confirmar senha -->
+                    <div>
+                        <input required type="password" placeholder="Confirme a senha" id="confirmPassword_register">
+                        <img src="/IMAGES/Icon_5.png" id="view_confirm_password" style="cursor: pointer;" alt="Mostrar/Ocultar Senha">
+                        <span id="confirmPasswordError"></span> 
+                    </div>
+
+                    <!-- Botão de envio do formulário e link para login -->
+                    <div>
+                        <input type="submit" value="Cadastrar" id="submitButton">
+                        <p>Já tem uma conta? <br>Entre clicando <a href="/HTML/login.html">aqui!</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+    <!-- Footer com direitos autorais -->
+    <footer>
+        <p>&copy; 2024 BROTA NO CORTE. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/JAVASCRIPT/register.js"></script>
+</body>
+
+</html>

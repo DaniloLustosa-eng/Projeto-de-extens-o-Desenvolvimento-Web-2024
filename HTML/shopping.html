@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/IMAGES/LOGOTIPOCOM.png">
+    <title>BROTA NO CORTE</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/shopping.css"> 
+</head>
+
+<body>
+    <!-- Alerta criado quando algum item é adicionado ao carrinho -->
+    <div id="alert" class="alert hidden"></div>
+    
+    <!-- Header com logo e navegação para diferentes áreas -->
+    <header>
+        <a href="/HTML/mainPage.html"><img src="/IMAGES/LOGOTIPOCOM.png" alt="Logo" class="logo"></a>
+        
+        <!-- Barra de busca -->
+        <input type="text" placeholder="Buscar" class="search_box">
+        
+        <ul>
+            <li><a href="/HTML/mainPage.html#sobre">SOBRE NÓS</a></li>
+            <li><a href="/HTML/mainPage.html#location">LOCALIZAÇÃO</a></li>
+            <li><a target="_blank" href="/HTML/shopping.html">PRODUTOS</a></li>
+            <li><a href="/HTML/login.html">ENTRAR</a></li>
+        </ul>
+        <a href="/HTML/cart.html" class="cart" title="Carrinho de Compras"> <span class="cart-icon">🛒</span> </a>
+    </header>
+
+    <!-- Lista de produtos -->
+    <div class="container">
+        <h1>Nossos Produtos</h1>
+
+        <!-- Seção de produtos-->
+        <div class="product-list">
+            <div class="product" data-name="Pomada para Cabelo">
+                <img src="/IMAGES/pomada.jpg" alt="Produto 1">
+                <h3>Pomada para Cabelo</h3>
+                <p>Pomada para tranças e penteados.</p>
+                <p>Preço: R$ 29,80</p>
+                <button class="add_to_cart" data-product-name="Pomada para Cabelo" data-product-price="29.80">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product" data-name="Creme pós Barba">
+                <img src="/IMAGES/creme_barbear.jpg" alt="Produto 2">
+                <h3>Creme pós barba</h3>
+                <p>Hidratação intensa para a pele.</p>
+                <p>Preço: R$ 69,80</p>
+                <button class="add_to_cart" data-product-name="Creme pós Barba" data-product-price="69.80">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product" data-name="Xampu Anticaspa">
+                <img src="/IMAGES/XampuCR7.jpg" alt="Produto 3">
+                <h3>Xampu Anticaspa</h3>
+                <p>Xampu ótimo contra caspas.</p>
+                <p>Preço: R$ 31,50</p>
+                <button class="add_to_cart" data-product-name="Xampu Anticaspa" data-product-price="31.50">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <div class="product-list">
+            <div class="product" data-name="Tesoura de Corte Profissional">
+                <img src="/IMAGES/tesoura_de_corte_cabelo.jpg" alt="Produto 4">
+                <h3>Tesoura de Corte Profissional</h3>
+                <p>Tesoura metálica para cortes profissionais.</p>
+                <p>Preço: R$ 19,80</p>
+                <button class="add_to_cart" data-product-name="Tesoura de Corte Profissional" data-product-price="19.80">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product" data-name="Pente de Barbeiro Profissional">
+                <img src="/IMAGES/Pente.png" alt="Produto 5">
+                <h3>Pente De Barbeiro Profissional</h3>
+                <p>Pente indicado para cabelos rebeldes.</p>
+                <p>Preço: R$ 49,90</p>
+                <button class="add_to_cart" data-product-name="Pente de Barbeiro Profissional" data-product-price="49.90">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product" data-name="Máquina Cabelo, Barba, Pézinho Profissional">
+                <img src="/IMAGES/Maquina_de_barbear.jpg" alt="Produto 6">
+                <h3>Máquina Cabelo, Barba, Pézinho Profissional</h3>
+                <p>Máquina profissional recarregável com lâmina ajustável.</p>
+                <p>Preço: R$ 89,90</p>
+                <button class="add_to_cart" data-product-name="Máquina Cabelo, Barba, Pézinho Profissional" data-product-price="89.90">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <div class="product-list">
+            <div class="product" data-name="QUADRO DECORATIVO CORTE">
+                <img src="/IMAGES/Danilo.png" alt="Produto 7">
+                <h3>QUADRO DECORATIVO CORTE</h3>
+                <p>Danilo.</p>
+                <p>Preço: R$ 2.000.000,00</p>
+                <button class="add_to_cart" data-product-name="QUADRO DECORATIVO CORTE" data-product-price="2000000.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Corrigido: Preenchendo o produto rickrolled com nome e preço válidos -->
+            <div class="product" data-name="Rickrolled" data-price="10.00">
+                <img src="/IMAGES/rick.png" alt="Produto 8">
+                <h3>Rickrolled</h3>
+                <p>Vídeo inesquecível.</p>
+                <p>Preço: R$ 10,00</p>
+                <button class="add_to_cart" data-product-name="Rickrolled" data-product-price="10.00">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Corrigido: Preenchendo o produto LE TROLL com nome e preço válidos -->
+            <div class="product" data-name="LE TROLL" data-price="50.00">
+                <img src="/IMAGES/trol.png" alt="Produto 9">
+                <h3>LE TROLL</h3>
+                <p>Brincadeira de internet.</p>
+                <p>Preço: R$ 50,00</p>
+                <button class="add_to_cart" data-product-name="LE TROLL" data-product-price="50.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer com direitos autorais -->
+    <footer>
+        <p>© 2024 BROTA NO CORTE. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/JAVASCRIPT/shopping.js"></script>
+</body>
+
+</html>

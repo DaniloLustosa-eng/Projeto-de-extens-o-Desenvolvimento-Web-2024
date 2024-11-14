@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Estilização geral do body */
+body {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-decoration: none; 
+}
+
+/* Estilização da header */
+header {
+    background: #333; 
+    color: #fff; 
+    padding: 37px 0;
+    text-align: center;
+    position: relative; 
+}
+
+/* Configuração de tamanho e localização da logo */
+.logo {
+    position: absolute;
+    left: -35px; 
+    top: -85px;  
+    width: 250px; /* Tamanho do logo */
+    height: 250px;
+}
+
+/* Configuração da UL da header (localização, estilo e comportamentos) */
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    display: inline-block; 
+    margin-right: -63px;
+    position: absolute;
+    right: 60px;
+    top: 18px;
+}
+ul li {
+    display: inline;
+    margin-right: 40px;
+    position: relative; 
+}
+
+/* Adiciona uma linha entre os itens do menu, menos no último */
+ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -20px; 
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px; 
+    width: 1px; 
+    background-color: #fff; 
+}
+
+ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #ffdc17; 
+}
+
+/*ajusta a posição da janela de login*/
+#register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); 
+}
+
+/*personaliza o container de login*/ 
+#registration {
+    background: #fff; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 300px; 
+    text-align: center; 
+}
+
+#registration h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#registration form div {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Configuração geral do footer */
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    text-align: center; 
+    flex: 1;
+}
+
+/* Configuração geral dos inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-size: 16px;
+}
+
+/*icones de vizualizar/esconder a senha personalizados*/
+#view_password, #view_confirm_password {
+    position: absolute;
+    right: -15px;
+    top: 12px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+/* Configuração do botão de entrar */
+input[type="submit"] {
+    background: #5cb85c; 
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 95%; 
+    border-radius: 4px; 
+    font-size: 16px;
+    transition: background 0.3s; 
+}
+
+input[type="submit"]:hover {
+    background: #4cae4c; 
+}
+
+p a {
+    color: #007bff; 
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline; 
+}

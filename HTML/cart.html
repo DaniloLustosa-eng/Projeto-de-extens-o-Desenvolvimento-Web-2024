@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/IMAGES/LOGOTIPOCOM.png">
+    <title>BROTA NO CORTE - Carrinho</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/cart.css"> 
+</head>
+<body>
+
+    <header id="header_cart">
+        <aside>
+            <section>
+                <a href="/HTML/mainPage.html"><img src="/IMAGES/LOGOTIPOCOM.png" alt="Logo" class="logo"></a>
+            </section>
+        </aside>
+
+        <nav>
+            <ul id="top">
+                <li><a href="/HTML/mainPage.html#sobre">SOBRE NÓS</a></li>
+                <li><a href="/HTML/mainPage.html#location">LOCALIZAÇÃO</a></li>
+                <li><a target="_blank" href="/HTML/shopping.html">PRODUTOS</a></li>
+                <li><a href="/HTML/login.html">ENTRAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Seu Carrinho</h1>
+    
+    <!-- Área para exibir itens adicionados ao carrinho -->
+    <div id="cart-items" class="cart-container"></div>
+
+    <!-- Exibição do valor total da compra -->
+    <div id="cart-total">
+        <h2>Total: R$ <span id="total-price">0,00</span></h2>
+    </div>
+    
+    <!-- Ações do carrinho: continuar comprando ou finalizar compra -->
+    <div id="cart-actions">
+        <a id="continue-shopping" href="/HTML/shopping.html" class="button">Continuar comprando</a>
+        <button id="checkout">Finalizar Compra</button>
+    </div>
+    
+    <!-- Rodapé com direitos autorais -->
+    <footer>
+        <p>&copy; 2024 BROTA NO CORTE. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/JAVASCRIPT/cart.js"></script>
+</body>
+</html>

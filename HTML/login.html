@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/IMAGES/LOGOTIPOCOM.png">
+    <title>BROTA NO CORTE</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/login.css"> 
+</head>
+
+<body>
+    <!-- Header com logo e  navegação para diferentes áreas-->
+    <header id="header_login">
+        <aside>
+            <section>
+                <a href="/HTML/mainPage.html"><img src="/IMAGES/LOGOTIPOCOM.png" alt="Logo" class="logo"></a>
+            </section>
+        </aside>
+
+        <nav> 
+            <ul>
+                <li><a href="/HTML/mainPage.html#sobre">SOBRE NÓS</a></li>
+                <li><a href="/HTML/mainPage.html#location">LOCALIZAÇÃO</a></li>
+                <li><a target="_blank" href="/HTML/shopping.html">PRODUTOS</a></li>
+                <li><a href="/HTML/login.html">ENTRAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulario de login-->
+    <section id="login">
+        <div id="login_part">
+            <h1>LOGIN</h1>
+            <form action="/HTML/mainPage.html" id="login_Form"  method="GET" >
+
+                <!-- Campo de entrada para e-mail com icone -->
+                <label for="email_login" class="sr-only">E-mail</label>
+                <div id="email_container">
+                    <input required type="email" placeholder="nome@email.com" id="email_login">  
+                    <div id="user_icon">
+                        <img src="/IMAGES/Icon_2.png" alt="User Icon" style="width: 29px;">
+                    </div>
+                </div>
+
+                <!-- Campo de entrada para senha com icone de visibilidade de senha -->
+                <label for="password_login" class="sr-only">Senha</label>
+                <div id="password_container">
+                    <input required type="password" placeholder="sua senha" id="password_login">
+                    <img src="/IMAGES/Icon_5.png" id="view_password" alt="Mostrar/Ocultar Senha" role="button" tabindex="0">
+                </div>
+                
+                <!-- Botao de login e link para cadastro -->
+                <div>
+                    <input type="submit" value="Entrar" id="submit-login">
+                    <p>Ainda não tem uma conta? <br>Cadastre-se clicando <a href="/HTML/register.html">aqui!</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer com direitos autorais -->
+    <footer>
+        <p>&copy; 2024 BROTA NO CORTE. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/JAVASCRIPT/login.js"></script>
+</body>
+</html>
